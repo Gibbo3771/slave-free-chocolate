@@ -1,0 +1,25 @@
+{
+  "name": "slavefreechoco",
+  "version": "0.1.0",
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "cd client && npm install && npm run build && cd ..",
+    "deploy": "cp -a client/build/. public/",
+    "postinstall": "npm run build && npm run deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gibbo3771/slave-free-chocolate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gibbo3771/slave-free-chocolate/issues"
+  },
+  "homepage": "https://github.com/Gibbo3771/slave-free-chocolate#readme"
+}

@@ -11,7 +11,7 @@ module Api::V1
 
     # GET /sources/1
     def show
-      render json: @source
+      render json: @source.as_json(include: :stamps, except: [:created_at, :updated_at])
     end
 
     # POST /sources

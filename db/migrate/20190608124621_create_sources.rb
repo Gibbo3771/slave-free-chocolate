@@ -4,7 +4,6 @@ class CreateSources < ActiveRecord::Migration[5.2]
       t.text :name
       t.text :href
 
-      t.timestamps
     end
   end
 end

@@ -14,31 +14,6 @@ module Api::V1
       render json: @stamp.as_json(except: [:created_at, :updated_at])
     end
 
-    # POST /stamps
-    def create
-      @stamp = Stamp.new(stamp_params)
-
-      if @stamp.save
-        render json: @stamp, status: :created, location: @stamp
-      else
-        render json: @stamp.errors, status: :unprocessable_entity
-      end
-    end
-
-    # PATCH/PUT /stamps/1
-    def update
-      if @stamp.update(stamp_params)
-        render json: @stamp
-      else
-        render json: @stamp.errors, status: :unprocessable_entity
-      end
-    end
-
-    # DELETE /stamps/1
-    def destroy
-      @stamp.destroy
-    end
-
     private
       # Use callbacks to share common setup or constraints between actions.
       def set_stamp

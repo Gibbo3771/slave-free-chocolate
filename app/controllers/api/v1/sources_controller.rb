@@ -14,31 +14,6 @@ module Api::V1
       render json: @source.as_json(include: :stamps, except: [:created_at, :updated_at])
     end
 
-    # POST /sources
-    def create
-      @source = Source.new(source_params)
-
-      if @source.save
-        render json: @source, status: :created, location: @source
-      else
-        render json: @source.errors, status: :unprocessable_entity
-      end
-    end
-
-    # PATCH/PUT /sources/1
-    def update
-      if @source.update(source_params)
-        render json: @source
-      else
-        render json: @source.errors, status: :unprocessable_entity
-      end
-    end
-
-    # DELETE /sources/1
-    def destroy
-      @source.destroy
-    end
-
     private
       # Use callbacks to share common setup or constraints between actions.
       def set_source

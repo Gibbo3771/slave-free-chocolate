@@ -31,7 +31,24 @@ utz_stamp = Stamp.create(title:"UTZ Certified", description:"The Rainforest Alli
     where farmers, workers, and communities prosper; and where sustainable land use and responsible business practices are the norm." 
     href:"https://utz.org/")
 
+home_grown_stamp = Stamp.create(title:"In-House Grown Cocao")
+local_grown_stamp = Stamp.create(title:"Locally Grown Cocao")
+
 
 aldi = Source.create(name:"Aldi", href:"https://www.aldi.co.uk/")
+aloha_feels = Source.create(name:"Aloha Feels", href:"https://alohafeels.com/")
+alma_chocolate = Source.create(name:"Alma Chocolate", href:"http://www.almachocolate.com/")
+altereco = Source.create(name:"Alter Eco Foods", href:"https://www.alterecofoods.com/collections/chocolate-bars")
+amano = Source.create(name:"Amano Artisan Chocolate", href:"http://amanochocolate.com")
 
+aldi.stamps << utz_stamp
 aldi.stamps << fairtrade_stamp
+aldi.stamps << rainforest_stamp
+
+aloha_feels.stamps << home_grown_stamp
+
+alma_chocolate << home_grown_stamp
+
+altereco << fairtrade_stamp
+
+amano << local_grown_stamp

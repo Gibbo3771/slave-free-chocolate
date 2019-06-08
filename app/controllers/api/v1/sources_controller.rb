@@ -6,12 +6,12 @@ module Api::V1
     def index
       @sources = Source.all
 
-      render json: @sources.as_json(include: :stamps, except: [:created_at, :updated_at])
+      render json: @sources.as_json(include: :stamps)
     end
 
     # GET /sources/1
     def show
-      render json: @source.as_json(include: :stamps, except: [:created_at, :updated_at])
+      render json: @source.as_json(include: :stamps)
     end
 
     private

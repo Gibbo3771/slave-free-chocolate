@@ -6,12 +6,12 @@ module Api::V1
     def index
       @stamps = Stamp.all
 
-      render json: @stamps.as_json(except: [:created_at, :updated_at])
+      render json: @stamps.as_json()
     end
 
     # GET /stamps/1
     def show
-      render json: @stamp.as_json(except: [:created_at, :updated_at])
+      render json: @stamp.as_json()
     end
 
     private

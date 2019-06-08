@@ -1,13 +1,10 @@
 import React from "react";
-import logo from "./logo.svg";
+import "./style.css";
+import Layout from "./components/Layout/Layout";
 import Title from "./components/Title/Title";
 
 function App() {
-  return (
-    <div>
-      <Title />
-    </div>
-  );
+  return <Layout />;
 }
 
 export default App;

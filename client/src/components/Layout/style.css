@@ -1,0 +1,15 @@
+.layout {
+  display: grid;
+  grid-template-areas:
+    ". title ."
+    ". flex .";
+  grid-template-rows: 150px auto;
+  grid-template-columns: 1fr 2fr 1fr;
+  height: 100%;
+}
+
+.flex {
+  grid-area: flex;
+  display: flex;
+  flex-direction: column;
+}

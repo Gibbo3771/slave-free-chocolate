@@ -1,0 +1,6 @@
+.page-title {
+  grid-area: title;
+  font-size: 32px;
+  align-self: center;
+  justify-self: center;
+}

@@ -9,26 +9,26 @@
 fairtrade_stamp = Stamp.create(title:"Fair Trade Certified", 
     description:"Fairtrade is about better prices, decent working conditions, local sustainability, and fair terms of trade for farmers and workers in the developing world. 
     By requiring companies to pay sustainable prices (which must never fall lower than the market price), Fairtrade addresses the injustices of conventional trade, 
-    which traditionally discriminates against the poorest, weakest producers. It enables them to improve their position and have more control over their lives." 
+    which traditionally discriminates against the poorest, weakest producers. It enables them to improve their position and have more control over their lives.", 
     href:"https://www.fairtrade.org.uk/")
 
 fairtrade_fed_stamp = Stamp.create(title:"Fair Federation", description:"The Fair Trade Federation is a membership organization of businesses who practice 360° fair trade. 
     FTF membership represents an entire organization, not just an individual product.  
-    This commitment represents a high bar of fair trade, where each and every business decision is made with the well-being of artisans and farmers in mind." 
+    This commitment represents a high bar of fair trade, where each and every business decision is made with the well-being of artisans and farmers in mind." ,
     href:"https://www.fairtradefederation.org/")
 
-rainforest_stamp = Stamp.create(title:"Rainforest Alliance Certified", description:"We are an alliance of farmers, forest communities, companies, and consumers committed to creating a world where people and nature thrive in harmony." 
+rainforest_stamp = Stamp.create(title:"Rainforest Alliance Certified", description:"We are an alliance of farmers, forest communities, companies, and consumers committed to creating a world where people and nature thrive in harmony." ,
     href:"https://www.rainforest-alliance.org/")
 
 fair_for_life = Stamp.create(title:"Fair for Life", 
     description:"Certification Programmes for Fair Trade & responsible supply chains and Corporate Social Responsibility. 
     A world where trade is a driving force for positive and sustainable change benefiting people and their environment. 
-    The two programmes apply worldwide and multi sectorial." 
+    The two programmes apply worldwide and multi sectorial.",
     href:"http://www.fairforlife.org/pmws/indexDOM.php?client_id=fairforlife&page_id=home&lang_iso639=en")
 
 utz_stamp = Stamp.create(title:"UTZ Certified", description:"The Rainforest Alliance and UTZ merged in 2018 in response to the critical challenges facing humanity: deforestation, climate change, systemic poverty, and social inequity. 
     We combined our respective strengths to build a future in which nature is protected and biodiversity flourishes; 
-    where farmers, workers, and communities prosper; and where sustainable land use and responsible business practices are the norm." 
+    where farmers, workers, and communities prosper; and where sustainable land use and responsible business practices are the norm.", 
     href:"https://utz.org/")
 
 home_grown_stamp = Stamp.create(title:"In-House Grown Cocao")
@@ -53,6 +53,55 @@ chocolate_and_love = Source.create(name:"Chocolate and Love", href:"https://choc
 chocolate_cartel = Source.create(name:"Chocolate Cartel", href:"https://chocolatecartel.com/")
 chocolatceleste = Source.create(name:"Chocolat Celeste", href:"https://chocolatceleste.com/")
 chocolate_tree = Source.create(name:"Chocolate Tree", href:"https://www.choctree.co.uk/")
+drink_cacoco = Source.create(name:"Drink Cacoco", href:"https://drinkcacoco.com/")
+choconature = Source.create(name:"Choconature", href:"https://choconature.com/")
+coco_chocolatier = Source.create(name:"Coco Chocolatier", href:"https://choconature.com/")
+compartes = Source.create(name:"Compartes", href:"https://compartes.com/")
+dandelion_chocolate = Source.create(name:"Dandelion Chocolate", href:"http://www.dandelionchocolate.com/")
+darkforest_chocolate = Source.create(name:"Dark Forest Chocolate", href:"https://www.darkforestchocolate.com/")
+denman_island = Source.create(name:"Denman Island Chocolate", href:"http://www.denmanislandchocolate.com/")
+divinite_chocolate = Source.create(name:"Divine Chocolate", href:"http://www.divinechocolate.com/us/")
+eating_evolved = Source.create(name:"Eating Evolved", href:"https://eatingevolved.com/")
+eatyourhat = Source.create(name:"Eat Your Hat", href:"https://www.eatyourhat.com/")
+elceibochocolate = Source.create(name:"El Ceibo Chocolate", href:"http://www.elceibochocolate.com/")
+endangered_species = Source.create(name:"Endangered Species Chocolate", href:"https://www.chocolatebar.com/")
+equal_exchange = Source.create(name:"Equal Exchange", href:"https://shop.equalexchange.coop/")
+fairafric = Source.create(name:"Fairafric", href:"http://fairafric.com/")
+forever_cacao = Source.create(name:"Forever Cacao", href:"https://www.forevercacao.co.uk/")
+fresco_chocolate = Source.create(name:"Fresco Chocolate", href:"https://frescochocolate.com/")
+frutition_chocolate_works = Source.create(name:"Frutition Chocolate Works", href:"https://www.fruitionchocolateworks.com/")
+gayleens_decadence = Source.create(name:"Gayleen's Decadence", href:"https://gayleensdecadence.co.za/")
+gepa = Source.create(name:"depa", href:"https://www.gepa.de/en/welcome.html")
+giddy_yo_yo = Source.create(name:"Giddy Yo Yo", href:"https://shop.giddyyoyo.com/")
+grenada_chocolate = Source.create(name:"Grenada Chocolate", href:"https://www.grenadachocolate.com/")
+grocers_daughter = Source.create(name:"Grocer's Daughter Chocolate", href:"https://www.grocersdaughter.com/")
+guittard = Source.create(name:"Guittard", href:"https://www.guittard.com/")
+habitiual = Source.create(name:"Habitual Chocolate", href:"https://www.habitualchocolate.com/home.html")
+truffle_pig_chocolate = Source.create(name:"Truffle Pig Chocolate", href:"https://trufflepigchocolate.com/")
+hiloshark_chocolate = Source.create(name:"Hilo Shark Chocolate", href:"http://www.hilosharkschocolate.com/")
+hninagourmet = Source.create(name:"Hnina Gourmet", href:"https://hninagourmet.com/")
+honest_chocolate = Source.create(name:"Honest Chocolate", href:"http://honestchocolate.co.za/")
+hooray_truffles = Source.create(name:"Hooray Truffles", href:"https://www.hooraytruffles.com/")
+burdick = Source.create(name:"L.A Burdick Chocolate", href:"https://www.burdickchocolate.com/default.aspx")
+laiguanachocolate = Source.create(name:"La Iguana Chocolate", href:"http://www.laiguanachocolate.com/Home.html")
+lake_champlain = Source.create(name:"Lake Champlain Chocolate", href:"https://www.lakechamplainchocolates.com/")
+camino = Source.create(name:"Camino", href:"https://camino.ca/")
+lillie_belle = Source.create(name:"Lillie Belle Farms", href:"http://www.lilliebellefarms.com/")
+madcasse = Source.create(name:"Madcasse", href:"http://www.madecasse.com/")
+mavericks = Source.create(name:"Maverick's Chocolate", href:"https://maverickchocolate.com/")
+mayan_monkey = Source.create(name:"Mayan Monkey Mijas", href:"https://www.mayanmonkey.es/")
+mayordomo = Source.create(name:"Mayordomo", href:"https://chocolatemayordomo.com/")
+mia_chocolates = Source.create(name:"Mia Chocolates", href:"http://miachocolates.com/")
+montezumas = Source.create(name:"Montezuma's British Chocolate", href:"https://www.montezumas.co.uk/")
+nayah_amazon = Source.create(name:"Nayah Amazon", href:"https://www.nayahamazon.com/")
+purdy_chocolate = Source.create(name:"Purdy's Chocolate", href:"https://www.purdys.com/")
+omanhene = Source.create(name:"Omanhene", href:"https://www.omanhene.com/")
+ombar = Source.create(name:"Ombar", href:"https://www.ombar.co.uk/")
+opulux = Source.create(name:"Opulux", href:"http://www.opulux.com/chocolates/")
+ohcf = Source.create(name:"Original Hawaiian Chocolate", href:"https://www.ohcf.us/home.html")
+parliament_chocolate = Source.create(name:"Parliament Chocolate", href:"https://parliamentchocolate.com/")
+
+
 
 aldi.stamps << [utz_stamp, fairtrade_stamp, rainforest_stamp]
 aloha_feels.stamps << home_grown_stamp
@@ -63,3 +112,20 @@ askinosie.stamps << askinosie_stamp
 beach_chocolate_factory.stamps << home_grown_stamp
 belicious.stamps << rainforest_stamp
 chocolate_and_love.stamps << fairtrade_stamp
+
+denman_island.stamps << fairtrade_stamp
+divinite_chocolate.stamps << fairtrade_stamp
+
+endangered_species.stamps << fairtrade_stamp
+equal_exchange.stamps << fairtrade_stamp
+
+gayleens_decadence.stamps << utz_stamp
+gepa.stamps << fairtrade_stamp
+
+guittard.stamps << fairtrade_stamp
+
+hooray_truffles.stamps << fairtrade_stamp
+
+mia_chocolates.stamps << fairtrade_stamp
+
+opulux.stamps << fairtrade_stamp

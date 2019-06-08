@@ -35,6 +35,8 @@ home_grown_stamp = Stamp.create(title:"In-House Grown Cocao")
 local_grown_stamp = Stamp.create(title:"Locally Grown Cocao")
 askinosie_stamp = Stamp.create(title:"Direct Trade", href:"https://askinosie.com/learn/direct-trade.html")
 
+bean_to_bar_stamp = Stamp.create(title:"Bean to Bar")
+
 
 aldi = Source.create(name:"Aldi", href:"https://www.aldi.co.uk/")
 aloha_feels = Source.create(name:"Aloha Feels", href:"https://alohafeels.com/")
@@ -100,8 +102,35 @@ ombar = Source.create(name:"Ombar", href:"https://www.ombar.co.uk/")
 opulux = Source.create(name:"Opulux", href:"http://www.opulux.com/chocolates/")
 ohcf = Source.create(name:"Original Hawaiian Chocolate", href:"https://www.ohcf.us/home.html")
 parliament_chocolate = Source.create(name:"Parliament Chocolate", href:"https://parliamentchocolate.com/")
-
-
+montevergine = Source.create(name:"Montevergine", href:"http://www.montevergine.com.br/#!/")
+patric_chocolate = Source.create(name:"Patric Chocolate", href:"http://patric-chocolate.com/about/")
+plamil = Source.create(name:"Plamil Foods", href:"https://www.plamilfoods.co.uk/chocolate")
+potomac_chocolate = Source.create(name:"Potomac Chocolate", href:"https://www.potomacchocolate.com/")
+pure_lovin = Source.create(name:"Pure Lovin' Chocolate", href:"https://www.purelovinchocolate.com/")
+rapunzel = Source.create(name:"Rapunzel", href:"https://www.rapunzel.de/index.html")
+ritual_chocolate = Source.create(name:"Ritual Chocolate", href:"https://www.ritualchocolate.com/")
+samaritanxocolata = Source.create(name:"Samaritan Xcolata", href:"https://www.samaritanxocolata.com/")
+sappho = Source.create(name:"Sappho Chocolates", href:"http://www.sapphochocolates.com/")
+seed_and_bean = Source.create(name:"Seed and Bean", href:"https://seedandbean.co.uk/")
+shaman = Source.create(name:"Shaman Chocolates", href:"https://www.shamanchocolates.com/about")
+solkiki = Source.create(name:"Solkiki", href:"https://www.solkiki.co.uk/")
+mamaganache = Source.create(name:"Mama Ganache", href:"https://www.mamaganache.com/")
+sweet_impact = Source.create(name:"Sweet Impact Chocolates", href:"http://sweetimpactchocolates.com/")
+sweet_riot = Source.create(name:"Sweetriot", href:"http://sweetriot.com/")
+sun_eaters_organics = Source.create(name:"Sun Eaters Organics", href:"https://www.facebook.com/suneatersorganics")
+taza = Source.create(name:"Taza Chocolates", href:"https://www.tazachocolate.com/")
+tcchocolate = Source.create(name:"TC Chocolate", href:"https://www.tcchocolate.com/")
+thco = Source.create(name:"THC", href:"https://tcho.com/")
+xocolatebar = Source.create(name:"The Xocolate Bar", href:"https://www.thexocolatebar.com/")
+theo = Source.create(name:"Theo Chocolate", href:"https://www.theochocolate.com/")
+the_original_chocolate_bar = Source.create(name:"The Original Chocolate Bar", href:"https://www.theoriginalchocolatebar.com/")
+tobagocacoa = Source.create(name:"Tobago Chocolate", href:"https://www.tobagococoa.com/")
+tonyschocoloney = Source.create(name:"Tony's Chocolonely", href:"https://tonyschocolonely.com/nl/nl")
+vivani = Source.create(name:"Vivani", href:"https://vivani.de/en/vivani-en/")
+vosgeschocolate = Source.create(name:"Vosges Chocolate", href:"https://www.vosgeschocolate.com/")
+wie_of_chocolate = Source.create(name:"Wei of Chocolate", href:"https://weiofchocolate.com/")
+xocolatlchocolate = Source.create(name:"Xocolatl", href:"https://www.xocolatlchocolate.com/")
+zotter = Source.create(name:"Zotter", href:"https://www.zotter.at/de/startseite.html")
 
 aldi.stamps << [utz_stamp, fairtrade_stamp, rainforest_stamp]
 aloha_feels.stamps << home_grown_stamp
@@ -129,3 +158,16 @@ hooray_truffles.stamps << fairtrade_stamp
 mia_chocolates.stamps << fairtrade_stamp
 
 opulux.stamps << fairtrade_stamp
+
+patric_chocolate.stamps << fairtrade_stamp
+
+rapunzel.stamps << fairtrade_stamp
+
+seed_and_bean.stamps << fairtrade_stamp
+shaman.stamps << fairtrade_stamp
+
+xocolatebar.stamps << fairtrade_stamp
+theo.stamps << fair_for_life
+
+wie_of_chocolate.stamps << fairtrade_stamp
+zotter.stamps << bean_to_bar_stamp

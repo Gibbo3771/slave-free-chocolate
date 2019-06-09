@@ -1,5 +1,5 @@
 module Api::V1
-  class SourcesController < ApplicationController
+  class SourcesController < ApiController
     before_action :set_source, only: [:show, :update, :destroy]
 
     # GET /sources

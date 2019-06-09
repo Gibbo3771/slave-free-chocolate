@@ -1,5 +1,5 @@
 module Api::V1
-  class StampsController < ApplicationController
+  class StampsController < ApiController
     before_action :set_stamp, only: [:show, :update, :destroy]
 
     # GET /stamps

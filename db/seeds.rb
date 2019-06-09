@@ -95,3 +95,4 @@ vosgeschocolate = Source.create(name:"Vosges Chocolate", href:"https://www.vosge
 wie_of_chocolate = Source.create(name:"Wei of Chocolate", href:"https://weiofchocolate.com/", stamps:[@fairtrade_stamp])
 xocolatlchocolate = Source.create(name:"Xocolatl", href:"https://www.xocolatlchocolate.com/")
 zotter = Source.create(name:"Zotter", href:"https://www.zotter.at/de/startseite.html", stamps:[@bean_to_bar_stamp])
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?

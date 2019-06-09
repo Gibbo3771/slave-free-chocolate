@@ -7,3 +7,5 @@
 @belicious_loc = Location.create(country:"Canada", city:"Slocan", zip:"V0G2C0")
 @black_mountain_chocolate_loc = Location.create(country:"USA", state:"North Carolina", city:"Winston-Salem", street:"Trade St NW", building_no:"732", zip:"27101")
 @aacaoteca_loc = Location.create(country:"Dominican Republic", city:"Gazcue Santo Domingo", street:"Calle Mahatma Gandhi", building_no:"153")
+@caribean_chocolate_loc = Location.create(country:"Costa Rica", city:"Puerto Viejo", street:"mets Oeste de Tasty Waves Playa Cocles", buiding_no:"25")
+@castronovo_loc = Location.create(country:"USA", state:"Florida", street:"Colorado Avenue in Stuart", building_no:"555", zip:"34994")

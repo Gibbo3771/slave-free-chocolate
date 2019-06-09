@@ -56,7 +56,7 @@ You can now go back to the root of the application and run the following command
 
 ## Contributing
 
-If you want to contribute then fork the repo and branch from the **develop branch**. If you are picking up an issue from  the issue tracker, please format your branch names as the following:
+If you want to contribute then fork the repo and branch from the **master branch**. If you are picking up an issue from  the issue tracker, please format your branch names as the following:
 
     issue_513
     

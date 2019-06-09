@@ -10,10 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_08_133652) do
+ActiveRecord::Schema.define(version: 2019_06_09_115713) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "locations", force: :cascade do |t|
+    t.text "country"
+    t.text "state"
+    t.text "city"
+    t.text "street"
+    t.text "building_no"
+    t.text "zip"
+  end
+
+  create_table "locations_sources", id: false, force: :cascade do |t|
+    t.bigint "source_id", null: false
+    t.bigint "location_id", null: false
+    t.index ["source_id", "location_id"], name: "index_locations_sources_on_source_id_and_location_id"
+  end
 
   create_table "sources", force: :cascade do |t|
     t.text "name"
@@ -28,8 +43,8 @@ ActiveRecord::Schema.define(version: 2019_06_08_133652) do
 
   create_table "stamps", force: :cascade do |t|
     t.text "title"
-    t.text "href"
     t.text "description"
+    t.text "href"
   end
 
 end

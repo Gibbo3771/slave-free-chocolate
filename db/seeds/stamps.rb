@@ -6,7 +6,7 @@
     which traditionally discriminates against the poorest, weakest producers. It enables them to improve their position and have more control over their lives.", 
     href:"https://www.fairtrade.org.uk/")
 
-@fairtrade_fed_stamp = Stamp.create(title:"Fair Federation", description:"The Fair Trade Federation is a membership organization of businesses who practice 360° fair trade. 
+@fairtrade_fed_stamp = Stamp.create(title:"Fair Trade Federation", description:"The Fair Trade Federation is a membership organization of businesses who practice 360° fair trade. 
     FTF membership represents an entire organization, not just an individual product.  
     This commitment represents a high bar of fair trade, where each and every business decision is made with the well-being of artisans and farmers in mind." ,
     href:"https://www.fairtradefederation.org/")

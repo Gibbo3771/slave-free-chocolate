@@ -1,7 +1,7 @@
 namespace :start do
     desc 'Start development server'
     task :development do
-      exec 'foreman start -f Procfile.dev'
+      exec 'bundle exec foreman start -f Procfile.dev'
     end
     
     desc 'Start production server'

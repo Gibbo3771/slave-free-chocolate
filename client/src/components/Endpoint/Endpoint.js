@@ -4,7 +4,9 @@ import "./style.css";
 const Endpoint = props => {
   return (
     <div>
-      <h1 className="url">{props.url}</h1>
+      <a href={props.link}>
+        <h1 className="url">{props.url}</h1>
+      </a>
       <p className="desc">{props.desc}</p>
     </div>
   );

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :locations
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
   root :to => "home#index"
   # match ':controller(/:action(/:id(.:format)))'

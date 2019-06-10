@@ -28,8 +28,8 @@ ActiveRecord::Schema.define(version: 2019_06_08_133652) do
 
   create_table "stamps", force: :cascade do |t|
     t.text "title"
-    t.text "href"
     t.text "description"
+    t.text "href"
   end
 
 end

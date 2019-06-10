@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  resources :tags
-  resources :origins
-  resources :locations
+
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
   root :to => "home#index"
   # match ':controller(/:action(/:id(.:format)))'
@@ -9,9 +7,9 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :sources
       resources :stamps
+      resources :tags
+      resources :origins
+      resources :locations
     end
-  end
-  namespace :admin do
-    resources :users
   end
 end

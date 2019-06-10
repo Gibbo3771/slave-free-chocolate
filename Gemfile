@@ -47,3 +47,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "foreman", "~> 0.64.0"
 
 gem "rails_admin", "~> 1.4"
+
+gem "active_model_serializers", "~> 0.10.9"

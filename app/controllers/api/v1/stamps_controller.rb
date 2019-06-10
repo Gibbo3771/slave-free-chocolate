@@ -1,6 +1,6 @@
 module Api::V1
   class StampsController < ApplicationController
-    before_action :set_stamp, only: [:show, :update, :destroy]
+    before_action :set_stamp, only: [:show]
 
     # GET /stamps
     def index

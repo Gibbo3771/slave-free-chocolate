@@ -1,17 +1,17 @@
 module Api::V1
   class SourcesController < ApplicationController
-    before_action :set_source, only: [:show, :update, :destroy]
+    before_action :set_source, only: [:show]
 
     # GET /sources
     def index
       @sources = Source.all
 
-      render json: @sources.as_json(include: :stamps)
+      render json: @sources
     end
 
     # GET /sources/1
     def show
-      render json: @source.as_json(include: :stamps)
+      render json: @source
     end
 
     private

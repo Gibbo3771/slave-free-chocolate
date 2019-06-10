@@ -59,9 +59,11 @@ This endpoint will get a specific tag given an ID. IDs for tags are represented 
 ## Searching
 
 **/api/v1/sources/search**
+
 Not yet implemented. Will allow search queries for sources, such as searching by tags, names etc
 
 **/api/v1/locations/search**
+
 Not yet implemented. Will allow for location based searching, such as country, city or zip.
 
 ## Running the application

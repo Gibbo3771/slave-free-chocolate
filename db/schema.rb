@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_10_180056) do
+ActiveRecord::Schema.define(version: 2019_06_10_204228) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,16 @@ ActiveRecord::Schema.define(version: 2019_06_10_180056) do
     t.integer "source_id"
   end
 
+  create_table "origins", force: :cascade do |t|
+    t.text "name"
+  end
+
+  create_table "origins_sources", id: false, force: :cascade do |t|
+    t.bigint "source_id", null: false
+    t.bigint "origin_id", null: false
+    t.index ["source_id", "origin_id"], name: "index_origins_sources_on_source_id_and_origin_id"
+  end
+
   create_table "sources", force: :cascade do |t|
     t.text "name"
     t.text "href"
@@ -36,10 +46,22 @@ ActiveRecord::Schema.define(version: 2019_06_10_180056) do
     t.index ["source_id", "stamp_id"], name: "index_sources_stamps_on_source_id_and_stamp_id"
   end
 
+  create_table "sources_tags", id: false, force: :cascade do |t|
+    t.bigint "source_id", null: false
+    t.bigint "tag_id", null: false
+    t.index ["source_id", "tag_id"], name: "index_sources_tags_on_source_id_and_tag_id"
+  end
+
   create_table "stamps", force: :cascade do |t|
     t.text "title"
     t.text "description"
     t.text "href"
+  end
+
+  create_table "tags", force: :cascade do |t|
+    t.text "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

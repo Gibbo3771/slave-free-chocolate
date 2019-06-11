@@ -1,6 +1,6 @@
-__Please note that the current live version is based on the *experimental* branch and is subject to breaking changes.__
 
-# Slave Free Chocolate API
+
+# Slave Free Chocolate API - current 0.2.0
 
 The Slave Free Chocolate API (SFC) is a free to use resource for people out there who want to get data about a companies chocolate.
 
@@ -89,6 +89,19 @@ All you have to do now is run the migrations. In your terminal run `rails db:set
 __Run and make sure it works__
 
 You can now go back to the root of the application and run the following command in your terminal to spin everything up `rake start:development`.  *This will run the React front end on port 3000 and the Rails API on port 3001*.
+
+__Seed some data__
+
+You can run `rails db:seed` to inject some develop/testing data into the database.
+
+__Rails Admin__
+
+The applications is using Rails Admin as a CMS and is currently the easiest way in adding and verifying the behaviour/structure of data. You can login to it by going to `/admin` and use the following credentials:
+
+- username: admin
+- password: password
+
+At the moment, the login is handled by HTTPBasic Auth. If you're feeling up to changing this, it would be nice to have proper JWT authentication and a nice login page for admins. This will allow trusted contributors work on the live database without shared credentials.
 
 ## Contributing
 

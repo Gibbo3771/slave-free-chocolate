@@ -1,3 +1,5 @@
+__Please note that the current live version is based on the *experimental* branch and is subject to breaking changes.__
+
 # Slave Free Chocolate API
 
 The Slave Free Chocolate API (SFC) is a free to use resource for people out there who want to get data about a companies chocolate.

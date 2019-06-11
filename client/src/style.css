@@ -3,10 +3,25 @@ body {
   height: 100%;
   width: 100%;
   /* background: rgb(38, 12, 12); */
-  background: linear-gradient(
-    -45deg,
-    rgba(38, 12, 12, 1) 32%,
-    rgba(79, 44, 44, 1) 32%
-  );
+  background: rgba(79, 44, 44, 1);
   color: #ffaeae;
+}
+
+#root {
+  margin-bottom: 3rem;
+}
+
+.docs {
+  grid-area: docs;
+  align-self: center;
+  justify-self: center;
+  text-decoration: underline;
+  font-size: 1.5em;
+  color: inherit;
+  padding-bottom: 2em;
+}
+
+.docs:hover {
+  color: rgb(253, 246, 246);
+  transition: color 0.25s linear;
 }

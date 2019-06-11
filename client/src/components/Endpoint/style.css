@@ -7,3 +7,21 @@
   font-size: 20px;
   padding-top: 20px;
 }
+
+.endpoint-link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.25s linear;
+  padding: 10px;
+  background: rgba(38, 12, 12, 0.267);
+  border-radius: 4px;
+  margin-bottom: 6px;
+  transition: transform 0.15s linear;
+}
+
+.endpoint-link:hover {
+  color: rgb(253, 246, 246);
+  transition: transform 0.25s ease-in;
+  background: rgba(36, 11, 11, 0.384);
+  transform: scale(1.025);
+}

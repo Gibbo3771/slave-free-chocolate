@@ -2,6 +2,7 @@
   display: grid;
   grid-template-areas:
     ". title ."
+    ". docs ."
     ". flex .";
   grid-template-rows: 150px auto;
   grid-template-columns: 1fr 2fr 1fr;
